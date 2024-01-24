@@ -181,7 +181,9 @@ body {
   width: 200px;
   margin: 2px;
 }
-
+.contact_section {
+  /* background: #6ea3bb; */
+}
 footer {
-  background: var(--accentColor);
+  background: #519cd4;
 }
