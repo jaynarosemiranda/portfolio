@@ -3,20 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jayna</title>
+    <title>My Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/16b6ab47b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js" defer></script>
   </head>
   <body>
     <header>
-      <nav class="flex justify-between items-center">
-        <a href="">Jayna</a>
-        <div>
-          <a href="">About</a>
-          <a href="">Project</a>
-          <a href="">Contact</a>
-        </div>
+      <nav class="">
+        <ul
+          onclick="myFunction(event)"
+          class="nav-bar flex justify-between items-center w-full relative px-6 md:px-24 py-6"
+          id="nav-bar"
+        >
+          <li>
+            <a
+              href="#"
+              class="uppercase logo text-2xl"
+              style="letter-spacing: 4px"
+              >Jay<span style="color: #519cd4" class="font-bold">na</span>
+              <span
+                style="
+                  width: 8px;
+                  height: 8px;
+                  background: #519cd4;
+                  border-radius: 50%;
+                  display: inline-block;
+                "
+              ></span>
+            </a>
+          </li>
+          <input type="checkbox" id="check" />
+          <div class="menu flex items-center">
+            <li class="mx-6">
+              <a href="#" class="active uppercase">About Me</a>
+            </li>
+            <li class="mx-6">
+              <a href="#" class="uppercase">Experience</a>
+            </li>
+            <li class="mx-6">
+              <a href="#" class="uppercase">Project</a>
+            </li>
+            <li class="mx-6">
+              <a href="#" class="uppercase">Contact</a>
+            </li>
+            <li onclick="toggleSystem()">
+              <i
+                class="fa-solid fa-moon text-2xl cursor-pointer"
+                style="display: none"
+              ></i>
+              <i class="fa-solid fa-sun text-2xl cursor-pointer"></i>
+            </li>
+            <label for="check" class="close-menu absolute">
+              <i class="fa-solid fa-times text-2xl"></i>
+            </label>
+          </div>
+          <label class="open-menu absolute" for="check">
+            <i class="fa-solid fa-bars text-2xl" onclick="goToMenu()"></i>
+          </label>
+        </ul>
       </nav>
     </header>
+
+    <main>
+      <section
+        class="hero-section px-6 lg:px-24 flex justify-center flex-col relative"
+      >
+        <div class="hero-section_details">
+          <img
+            src="./assets/img/section-8-img-2.svg"
+            alt=""
+            style="width: 250px; z-index: -1"
+            class="absolute left-0"
+          />
+          <h3 class="text-2xl md:text-3xl tracking-wide">Hi There,</h3>
+          <h2 class="text-3xl md:text-4xl pt-2 tracking-wide">
+            I am <span style="color: #519cd4" class="">Jayna Miranda</span>
+          </h2>
+          <h1 class="text-4xl md:text-6xl pt-2 tracking-widest">
+            Frontend Developer
+          </h1>
+
+          <div class="mt-6">
+            <a
+              href="./docs/Jayna Rose Miranda Resume.pdf"
+              download
+              class="text-white btn_resume rounded-md uppercase w-36 md:w-44 lg:w-48 inline-block p-2 text-center text-xs md:text-lg"
+            >
+              Download CV
+              <i class="fa-solid fa-arrow-right ml-1"></i>
+            </a>
+            <a
+              href="./docs/Jayna Rose Miranda Resume.pdf"
+              download
+              class="text-white btn_resume rounded-md uppercase ml-4 w-36 md:w-44 lg:w-48 inline-block p-2 text-center text-xs md:text-lg"
+            >
+              Let's talk
+              <i class="fa-solid fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+          <img
+            src="./assets/img/section-3-img-2.svg"
+            alt=""
+            style="z-index: -1"
+            class="absolute right-0 top-0 lg:block hidden"
+          />
+          <div class="social-media-links mt-8 flex">
+            <a href="facebook.com">
+              <i class="text-white fa-brands fa-facebook"></i>
+            </a>
+            <a href="instagram.com">
+              <i class="text-white fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="text-white fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="">
+              <i class="text-white fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
