@@ -10,9 +10,6 @@ function myFunction(e) {
     elems.classList.remove("active");
   }
   e.target.classList.add("active");
-  // if (e.target.innerHTML == "Contact") {
-  //   e.target.style.color = "white";
-  // }
 }
 
 function toggleSystem() {
