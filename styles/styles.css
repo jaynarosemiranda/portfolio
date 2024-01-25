@@ -168,7 +168,8 @@ footer {
     width: 75%;
     height: 100vh;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    padding-top: 6em;
     position: fixed;
     top: 0;
     right: -100%;
