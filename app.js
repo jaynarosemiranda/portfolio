@@ -12,13 +12,19 @@ function myFunction(e) {
   e.target.classList.add("active");
 }
 
-function toggleSystem() {
-  // let body = document.querySelector("body");
+function changeTheme() {
+  if (localStorage.getItem("isDarkMode") == "true") {
+    localStorage.setItem("isDarkMode", "false");
+  } else {
+    localStorage.setItem("isDarkMode", "true");
+  }
+  toggleColor();
+}
+function toggleColor() {
   let body = document.body;
-  let links = document.querySelectorAll("a");
   let menu = document.querySelector(".menu");
 
-  if (body.classList.contains("light-theme")) {
+  if (localStorage.getItem("isDarkMode") == "true") {
     document.querySelector(".fa-moon").style.display = "none";
     document.querySelector(".fa-sun").style.display = "block";
     menu.style.background = "#101530";
@@ -27,7 +33,7 @@ function toggleSystem() {
     document.querySelector(".fa-moon").style.display = "block";
     document.querySelector(".fa-sun").style.display = "none";
     body.classList.add("light-theme");
-
     menu.style.background = "#c7d2f2";
   }
 }
+toggleColor();
