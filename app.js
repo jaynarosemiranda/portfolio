@@ -24,16 +24,16 @@ function toggleColor() {
   let body = document.body;
   let menu = document.querySelector(".menu");
 
-  if (localStorage.getItem("isDarkMode") == "true") {
-    document.querySelector(".fa-moon").style.display = "none";
-    document.querySelector(".fa-sun").style.display = "block";
-    menu.style.background = "#101530";
-    body.classList.remove("light-theme");
-  } else {
+  if (localStorage.getItem("isDarkMode") == "false") {
     document.querySelector(".fa-moon").style.display = "block";
     document.querySelector(".fa-sun").style.display = "none";
     body.classList.add("light-theme");
     menu.style.background = "#c7d2f2";
+  } else {
+    document.querySelector(".fa-moon").style.display = "none";
+    document.querySelector(".fa-sun").style.display = "block";
+    menu.style.background = "#101530";
+    body.classList.remove("light-theme");
   }
 }
 toggleColor();
