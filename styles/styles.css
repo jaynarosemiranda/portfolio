@@ -163,6 +163,16 @@ body {
   color: #808080;
   font-size: 12px;
 }
+.submit-btn {
+  transition: all 0.15s ease;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.submit-btn:hover {
+  background: var(--darkThemeColor);
+  color: #fff;
+  border: 1px solid var(--darkThemeColor);
+}
 /* input::placeholder {
   color: black;
 } */
