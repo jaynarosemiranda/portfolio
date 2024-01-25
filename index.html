@@ -43,7 +43,7 @@
               <a href="#" class="active uppercase">About Me</a>
             </li>
             <li class="mx-6">
-              <a href="#" class="uppercase">Experience</a>
+              <a href="#" class="uppercase">Skills</a>
             </li>
             <li class="mx-6">
               <a href="#" class="uppercase">Project</a>
@@ -92,7 +92,7 @@
             <a
               href="./docs/Jayna Rose Miranda Resume.pdf"
               download
-              class="contact-btn rounded-md uppercase w-36 md:w-44 lg:w-48 inline-block p-2 text-center text-xs md:text-lg"
+              class="primary-btn contact-btn rounded-md uppercase w-36 md:w-44 lg:w-48 inline-block p-2 text-center text-xs md:text-lg"
             >
               Download CV
               <i class="fa-solid fa-arrow-right ml-1"></i>
@@ -100,7 +100,7 @@
             <a
               href="https://calendly.com/work-jaynarosemiranda/30min"
               target="_blank"
-              class="contact-btn rounded-md uppercase ml-4 w-36 md:w-44 inline-block p-2 text-center text-xs md:text-lg"
+              class="primary-btn contact-btn rounded-md uppercase ml-4 w-36 md:w-44 inline-block p-2 text-center text-xs md:text-lg"
             >
               Let's talk
               <i class="fa-solid fa-arrow-right ml-1"></i>
@@ -129,16 +129,14 @@
             <a href="https://github.com/jaynarosemiranda" target="_blank">
               <i class="fa-brands fa-github"></i>
             </a>
+            <a
+              href="https://www.upwork.com/freelancers/~0160738e898ad00186"
+              target="_blank"
+            >
+              <i class="fa-brands fa-upwork"></i>
+            </a>
           </div>
         </div>
-        <!-- <div class="dp ">
-          <img
-            src="./assets/img/dp.jpeg"
-            alt=""
-            class=""
-            style="width: 200px"
-          />
-        </div> -->
       </section>
       <section class="about-me_section px-6 md:px-24">
         <h2 class="text-white text-center text-3xl">About Me</h2>
@@ -156,19 +154,56 @@
           cupiditate voluptatum, deserunt doloribus corporis magnam esse
         </p>
       </section>
-      <section
-        id="experience_section"
-        class="experience_section px-6 md:px-24 mt-16"
-      >
-        <h2 class="text-white text-center text-3xl">Skills</h2>
-        <div class="flex flex-wrap mt-5 justify-center items-center">
-          <img src="./assets/img/html-logo.png" alt="" />
-          <img src="./assets/img/css-logo.png" alt="" />
-          <img src="./assets/img/js-logo.png" alt="" />
-          <img src="./assets/img/vue-logo.png" alt="" />
+      <section id="skills_section" class="skills_section px-4 md:px-24 mt-16">
+        <h2 class="text-white text-center text-3xl uppercase tracking-widest">
+          Skills
+        </h2>
+        <div class="py-8 md:py-20 skills-set_container">
+          <div
+            class="flex flex-col items-center h-18 md:h-36 justify-between mx-12"
+          >
+            <img src="./assets/img/html-logo.png" alt="" />
+            <span class="text-xs md:text-md lg:text-xl lg:text-lg">HTML5</span>
+          </div>
+          <div
+            class="flex flex-col items-center h-18 md:h-36 justify-between mx-12"
+          >
+            <img src="./assets/img/css-logo.png" alt="" />
+            <span class="text-xs md:text-md lg:text-xl">CSS 3</span>
+          </div>
+          <div
+            class="flex flex-col items-center h-18 md:h-36 justify-between mx-12"
+          >
+            <img src="./assets/img/js-logo.png" alt="" />
+            <span class="text-xs md:text-md lg:text-xl">Javascript</span>
+          </div>
+          <div
+            class="flex flex-col items-center h-18 md:h-36 justify-between mx-12"
+          >
+            <img src="./assets/img/vue-logo.png" alt="" />
+            <span class="text-xs md:text-md lg:text-xl">Vue JS</span>
+          </div>
+          <div
+            class="flex flex-col items-center h-18 md:h-36 justify-between mx-12"
+          >
+            <img src="./assets/img/tailwind-logo.png" alt="" />
+            <span class="text-xs md:text-md lg:text-xl">Tailwind</span>
+          </div>
+          <div
+            class="flex flex-col items-center h-18 md:h-36 justify-between mx-12"
+          >
+            <img src="./assets/img/bootstrap-logo.png" alt="" />
+            <span class="text-xs md:text-md lg:text-xl">Bootstrap</span>
+          </div>
+          <div
+            class="flex flex-col items-center h-18 md:h-36 justify-between mx-12"
+          >
+            <img src="./assets/img/github-logo-copy.png" alt="" />
+            <span class="text-xs md:text-md lg:text-xl">Github</span>
+          </div>
         </div>
       </section>
-      <section class="project_section px-6 md:px-24 mt-12">
+      <section class="project_section px-4 md:px-24 mt-12">
         <h2 class="text-white text-center text-3xl">Project Here</h2>
         <p class="text-center mt-4">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur,
@@ -179,41 +214,116 @@
         </p>
       </section>
 
-      <section class="contact_section px-6 md:px-24 mt-12 h-full">
-        <h2 class="text-white text-center text-3xl">Contact</h2>
-        <div class="flex justify-between mt-4 md:flex-col flex-wrap">
-          <div class="w-full md:w-1/2">
-            <h3 class="text-xl">Drop Me a Message</h3>
-            <p class="text-sm mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
-              deleniti ipsum porro quam provident at maxime fugit qui
-              consequatur architecto?
-            </p>
-            <div class="my-3 mt-5">
-              <i class="fa-solid fa-phone"></i>
-              <span class="pl-2 md:pl-4">+(63) 976 198 9001</span>
+      <section class="contact_section mt-12 h-full relative">
+        <div class="inner"></div>
+        <div class="px-6 md:px-24 pb-10">
+          <h2 class="text-white text-center text-3xl">Contact</h2>
+
+          <div
+            class="flex justify-between mt-4 flex-col md:flex-row flex-wrap pt-10"
+          >
+            <div class="w-full md:w-1/2 lg:pr-6">
+              <h3 class="text-xl">Drop Me a Message</h3>
+              <p class="text-sm mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+                deleniti ipsum porro quam provident at maxime fugit qui
+                consequatur architecto?
+              </p>
+              <div class="my-4 mt-5">
+                <i class="fa-solid fa-phone"></i>
+                <span class="pl-2 md:pl-4">+(63) 976 198 9001</span>
+              </div>
+              <div class="my-3">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="pl-2 md:pl-4"
+                  >work.jaynarosemiranda@gmail.com</span
+                >
+              </div>
+              <div class="my-3">
+                <i class="fa-solid fa-location-pin"></i>
+                <span class="pl-2 md:pl-4"
+                  >Sta. Rosa Laguna, Philippines 4026</span
+                >
+              </div>
             </div>
-            <div class="my-3">
-              <i class="fa-solid fa-envelope"></i>
-              <span class="pl-2 md:pl-4">work.jaynarosemiranda@gmail.com</span>
-            </div>
-            <div class="my-3">
-              <i class="fa-solid fa-location-pin"></i>
-              <span class="pl-2 md:pl-4"
-                >Sta. Rosa Laguna, Philippines 4026</span
+            <div class="w-full md:w-1/2 lg:pl-6">
+              <form
+                action=""
+                class="p-5"
+                style="
+                  background: rgba(110, 163, 187, 0.16);
+                  border-radius: 16px;
+                  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                  backdrop-filter: blur(2.1px);
+                  -webkit-backdrop-filter: blur(2.1px);
+                  border: 1px solid rgba(110, 163, 187, 0.27);
+                "
               >
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="p-2 w-full block my-4 rounded-md outline-none"
+                />
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Email"
+                  class="p-2 w-full block my-4 rounded-md outline-none"
+                />
+                <textarea
+                  class="p-2 w-full block my-4 rounded-md outline-none"
+                  name=""
+                  id=""
+                  cols="20"
+                  rows="10"
+                  placeholder="Message "
+                ></textarea>
+                <div class="text-center">
+                  <button
+                    type="submit"
+                    class="primary-btn rounded-md uppercase w-36 inline-block p-2 text-center text-xs md:text-md"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
-          <!-- <div class="w-full md:w-1/2">
-            <form action="">
-              <input type="text" placeholder="Name" />
-            </form>
-          </div> -->
         </div>
+        <div class="outer"></div>
+        <img
+          src="./assets/img/section-3-img-2.svg"
+          alt=""
+          style="z-index: -1"
+          class="absolute right-0 top-0 md:block hidden"
+        />
       </section>
 
-      <footer class="p-2 md:p-7 text-center mt-10">
-        <p class="text-lg md:text-xl">&copy; 2024. All Rights reserved</p>
+      <footer class="p-2 md:p-7 text-center pt-10">
+        <p class="text-md">&copy; Copyright 2024. All Rights reserved</p>
+
+        <div class="social-media-links flex justify-center pt-3">
+          <a href="https://www.facebook.com/mirandajaynarose/" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/jayna-rose-miranda/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/jaynarosemiranda" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.upwork.com/freelancers/~0160738e898ad00186"
+            target="_blank"
+          >
+            <i class="fa-brands fa-upwork"></i>
+          </a>
+        </div>
       </footer>
     </main>
   </body>
