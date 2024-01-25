@@ -14,7 +14,7 @@ function myFunction(e) {
 
 function toggleSystem() {
   // let body = document.querySelector("body");
-  let body = document.querySelector("body");
+  let body = document.body;
   let links = document.querySelectorAll("a");
 
   if (body.classList.contains("light-theme")) {

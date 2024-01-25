@@ -65,7 +65,8 @@
 
     <main>
       <section
-        class="hero-section px-6 md:px-24 flex justify-center flex-col relative w-full"
+        class="hero_section px-6 md:px-24 flex justify-center flex-col relative w-full"
+        id="hero_section"
       >
         <div class="hero-section_details">
           <img
@@ -132,7 +133,11 @@
           </div>
         </div>
       </section>
-      <section class="about-me_section px-4 md:px-24" data-aos="fade-up">
+      <section
+        class="about_section px-4 md:px-24"
+        data-aos="fade-up"
+        id="about_section"
+      >
         <h2 class="text-white text-center text-3xl uppercase">About Me</h2>
         <p class="mt-4 text-sm lg:text-md leading-7">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus,
@@ -204,7 +209,8 @@
       <section
         class="project_section mt-12"
         data-aos="fade-up"
-        style="height: 90vh"
+        style="min-height: 80vh"
+        id="project_section"
       >
         <div class="px-4 md:px-24">
           <h2 class="text-white text-center text-3xl uppercase">
@@ -226,8 +232,12 @@
         />
       </section>
 
-      <section class="contact_section mt-12 h-full relative" data-aos="fade-up">
-        <div class="inner clip-path_circle md:hidden"></div>
+      <section
+        class="contact_section mt-12 h-full relative"
+        data-aos="fade-up"
+        id="contact_section"
+      >
+        <!-- <div class="inner clip-path_circle hidden md:block"></div> -->
 
         <div class="px-4 md:px-24 pb-10">
           <h2 class="text-white text-center text-3xl uppercase">Contact</h2>
@@ -305,12 +315,32 @@
         />
       </section>
 
-      <footer class="p-1 md:p-2 text-center pt-5 md:pt-10">
-        <p class="text-sm lg:text-md leading-7 lg:text-md">
-          &copy; Copyright 2024. All Rights reserved
-        </p>
+      <footer class="px-2 py-5 text-center">
+        <ul
+          onclick="myFunction(event)"
+          class="flex justify-center items-center footer-bar"
+          id=""
+        >
+          <!-- <div class="menu flex items-center"> -->
+          <li class="text-xs md:text-sm">
+            <a href="#" class="active uppercase">Home</a>
+          </li>
+          <li class="text-xs md:text-sm">
+            <a href="#" class="active uppercase">About Me</a>
+          </li>
+          <li class="text-xs md:text-sm">
+            <a href="#" class="uppercase">Skills</a>
+          </li>
+          <li class="text-xs md:text-sm">
+            <a href="#" class="uppercase">Project</a>
+          </li>
+          <li class="text-xs md:text-sm">
+            <a href="#" class="uppercase">Contact</a>
+          </li>
+          <!-- </div> -->
+        </ul>
 
-        <div class="social-media-links flex justify-center pt-3">
+        <div class="social-media-links flex justify-center pt-1 pb-3">
           <a href="https://www.facebook.com/mirandajaynarose/" target="_blank">
             <i class="fa-brands fa-facebook"></i>
           </a>
@@ -331,6 +361,9 @@
             <i class="fa-brands fa-upwork"></i>
           </a>
         </div>
+        <p class="text-xs md:text-sm lg:text-md leading-7 lg:text-md">
+          &copy; Copyright 2024. All Rights reserved
+        </p>
       </footer>
     </main>
     <script>
