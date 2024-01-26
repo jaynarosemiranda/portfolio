@@ -101,6 +101,7 @@ function toggleColor() {
     menu.style.background = "#c7d2f2";
     nav.style.background = "#c7d2f2";
     socialLinks.style.color = "#fff";
+
     // document.querySelector(".cv-btn").style.color = "#fff";
   } else {
     dark.style.display = "none";
