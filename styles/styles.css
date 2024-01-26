@@ -329,9 +329,6 @@ section .title::before {
   display: block;
 }
 
-.project {
-  overflow: hidden;
-}
 .overlay {
   position: absolute;
   bottom: 0;
