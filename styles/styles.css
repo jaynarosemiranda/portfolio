@@ -189,19 +189,8 @@ nav {
   background: var(--lightThemeColor);
   color: #242a4e;
 }
-.bg-circle {
-  background: transparent;
-  background-image: radial-gradient(var(--accentColor) 1px, transparent 0);
-  background-size: 20px 20px;
-  background-position: -19px -19px;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  z-index: -10;
-  top: 50%;
-}
 
-.skills_section > div img {
+.skills-set_container img {
   width: 100px;
 }
 
@@ -266,6 +255,7 @@ nav {
 }
 .see_project-btn:hover {
   color: var(--accentColor);
+  /* transform: scale(1.1); */
 }
 .see_project-btn i {
   transition: all 0.1s ease-in-out;
@@ -310,6 +300,76 @@ footer .social-media-links a {
   width: 35px;
   height: 35px;
 }
+.hero_section .svg {
+  bottom: -10%;
+  /* top: 0; */
+}
+.skills-set_container > div {
+  transition: all 0.5s ease-in-out;
+}
+.skills-set_container > div:hover {
+  transform: scale(1.1);
+}
+section .title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+section .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 160px;
+  height: 3px;
+  background: var(--accentColor);
+  transform: translate(-50%, -50%);
+  /* transform:; */
+  display: block;
+}
+
+.project {
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(16, 21, 48, 0.85);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.8s ease;
+  border-radius: 0.5rem;
+  /* padding: 10px; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  display: block;
+  text-align: center;
+
+  /* border: 1px solid var(--accentColor); */
+}
+.overlay h2 {
+  margin-top: 20px;
+}
+.project:hover .overlay {
+  height: 100%;
+
+  /* transform: scale(1.1); */
+}
+.project:hover {
+  border: transparent;
+}
+.view_all-cont a {
+  transition: all 0.5s ease;
+}
+.view_all-cont a:hover {
+  background-color: var(--accentColor);
+}
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .menu {
@@ -340,18 +400,31 @@ footer .social-media-links a {
   #check:checked ~ .menu {
     right: 0;
   }
-  .skills_section img {
+  .hero_section .svg {
+    bottom: -18%;
+  }
+  .skills-set_container img {
     width: 40px !important;
   }
+  /* .skills-set_container {
+    width: 100%;
+    margin: 0 auto;
+    gap: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  } */
+  footer .social-media-links a {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .skills-set_container {
     width: 100%;
     margin: 0 auto;
     gap: 15px;
     display: grid;
     grid-template-columns: auto auto auto;
-  }
-  footer .social-media-links a {
-    width: 30px;
-    height: 30px;
   }
 }
