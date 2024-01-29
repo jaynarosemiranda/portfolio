@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "title": "Miracle",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, dolorum.",
+      "image": "./assets/img/dummy-image.webp"
+    },
+    {
+      "title": "Aria",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, dolorum.",
+      "image": "./assets/img/dummy-image.webp"
+    },
+    {
+      "title": "Miracle",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, dolorum.",
+      "image": "./assets/img/dummy-image.webp"
+    },
+    {
+      "title": "Miracle",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, dolorum.",
+      "image": "./assets/img/dummy-image.webp"
+    }
+    
+  ]
+}

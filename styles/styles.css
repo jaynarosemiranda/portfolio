@@ -19,42 +19,26 @@ nav {
   left: 0;
   z-index: 100;
 }
-#button {
-  display: inline-block;
-  background-color: #ff9800;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-}
-#button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-#button:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-#button:active {
-  background-color: #555;
-}
-#button.show {
-  opacity: 1;
-  visibility: visible;
-}
 
+.scroll-button {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--accentColor);
+  border: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 20;
+}
+.scroll-button.active {
+  opacity: 0.7;
+}
+/* disp
+  
 /* Styles for the content section */
 
 .content {
@@ -313,7 +297,7 @@ footer .social-media-links a {
 section .title {
   position: relative;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   padding-bottom: 20px;
 }
 section .title::before {
@@ -424,4 +408,16 @@ section .title::before {
     display: grid;
     grid-template-columns: auto auto auto;
   }
+}
+
+.project {
+  width: 20rem;
+  height: auto;
+  border-radius: 0.375rem;
+  position: relative;
+  padding: 0.75rem;
+}
+.project_img {
+  border-radius: 0.375rem;
+  width: 100%;
 }
