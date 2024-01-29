@@ -13,7 +13,7 @@ fetch("./data/projects.json")
             <img
                   src="${data.image}"
                   alt=""
-                  class="rounded-md w-full"
+                  class="rounded-md w-full h-full"
                   id="project_image"
             />
                 <div class="overlay">

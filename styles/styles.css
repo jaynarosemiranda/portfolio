@@ -342,9 +342,23 @@ section .title::before {
 
   /* transform: scale(1.1); */
 }
+
 .project:hover {
   border: transparent;
 }
+
+.project {
+  width: 20rem;
+  height: auto;
+  border-radius: 0.375rem;
+  position: relative;
+  padding: 0.75rem;
+}
+.project_img {
+  border-radius: 0.375rem;
+  width: 100%;
+}
+
 .view_all-cont a {
   transition: all 0.5s ease;
 }
@@ -408,16 +422,4 @@ section .title::before {
     display: grid;
     grid-template-columns: auto auto auto;
   }
-}
-
-.project {
-  width: 20rem;
-  height: auto;
-  border-radius: 0.375rem;
-  position: relative;
-  padding: 0.75rem;
-}
-.project_img {
-  border-radius: 0.375rem;
-  width: 100%;
 }
