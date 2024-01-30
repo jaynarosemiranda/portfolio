@@ -97,14 +97,18 @@ function toggleColor() {
   let light = document.querySelector(".fa-sun");
   let nav = document.querySelector("nav");
   let socialLinks = document.querySelector(".hero_section .social-media-links");
+  let details = document.querySelector(".hero-section_details");
+  let btn = document.querySelector(".btn-wrapper");
 
   if (localStorage.getItem("isDarkMode") == "false") {
     dark.style.display = "block";
     light.style.display = "none";
     body.classList.add("light-theme");
-    menu.style.background = "#c7d2f2";
-    nav.style.background = "#c7d2f2";
+    menu.style.background = "#cdd5ef";
+    nav.style.background = "#cdd5ef";
     socialLinks.style.color = "#fff";
+    details.style.color = "#101530";
+    // btn.style.color = "#fff";
 
     // document.querySelector(".cv-btn").style.color = "#fff";
   } else {
@@ -113,6 +117,7 @@ function toggleColor() {
     menu.style.background = "#101530";
     body.classList.remove("light-theme");
     nav.style.background = "#101530";
+    details.style.color = "#fff";
   }
 }
 toggleColor();

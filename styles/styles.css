@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 :root {
   --darkThemeColor: #101530;
-  --lightThemeColor: #c7d2f2;
+  --lightThemeColor: #cdd5ef;
   --accentColor: #6ea3bb;
   --btnGradient: linear-gradient(to right, #519cd4, #502fcc);
 }
@@ -149,6 +149,10 @@ nav {
 .hero_section .social-media-links a {
   width: 35px;
   height: 35px;
+}
+
+.hero_section .fa-arrow-right {
+  color: var(--accentColor);
 }
 
 .social-media-links a {
@@ -411,6 +415,10 @@ section .title::before {
   footer .social-media-links a {
     width: 30px;
     height: 30px;
+  }
+  .hero_section .svg {
+    bottom: -15%;
+    /* top: 0; */
   }
 }
 
