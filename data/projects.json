@@ -2,24 +2,27 @@
   "data": [
     {
       "title": "Miracle",
-      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, dolorum.",
+      "description": "Casino and Slot Games to provide entertainment and excitement for the user",
+      "techStack": ["Vue JS", " HTML", " CSS"],
       "image": "./assets/img/miracle.png"
     },
     {
-      "title": "Aria",
-      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, dolorum.",
+      "title": "Dummy Text Only!",
+      "description": "Casino and Slot Games to provide entertainment and excitement for the user",
+      "techStack": ["Vue JS", " HTML", " CSS"],
       "image": "./assets/img/dummy-image.webp"
     },
     {
-      "title": "Miracle",
-      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, dolorum.",
+      "title": "Dummy Text Only!",
+      "description": "Casino and Slot Games to provide entertainment and excitement for the user",
+      "techStack": ["Vue JS", " HTML", " CSS"],
       "image": "./assets/img/dummy-image.webp"
     },
     {
-      "title": "Miracle",
-      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, dolorum.",
+      "title": "Dummy Text Only!",
+      "description": "Casino and Slot Games to provide entertainment and excitement for the user",
+      "techStack": ["Vue JS", " HTML", " CSS"],
       "image": "./assets/img/dummy-image.webp"
     }
-    
   ]
 }

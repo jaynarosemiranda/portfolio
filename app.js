@@ -6,31 +6,61 @@ fetch("./data/projects.json")
     res.data.forEach((data) => {
       const container = document.querySelector(".project_wrapper");
       const project = document.createElement("div");
-
+      const overlay = document.createElement("div");
+      let ul = document.createElement("ul");
+      const listWrapper = document.createElement("div");
       project.classList.add("project");
       project.classList.add("glass_form");
-      project.innerHTML = `
-            <img
-                  src="${data.image}"
-                  alt=""
-                  class="rounded-md w-full h-full"
-                  id="project_image"
-            />
-                <div class="overlay">
-                    <h2 class="text-md md:text-lg py-2">${data.title}</h2>
-                    <p id="description_project">
-                        ${data.description}
-                    </p>
-                    <a
-                      href="project.html"
-                      target="_blank"
-                      class="mt-2 mb-1 block text-sm md:text-md see_project-btn"
-                    >
-                      See Project <i class="fa-solid fa-arrow-right ml-1"></i>
-                    </a>
-                </div>
-      `;
-      container.appendChild(project);
+
+      const img = document.createElement("img");
+      img.src = data.image;
+      img.setAttribute(
+        "style",
+        "width:100%; height:100%; border-radius: 0.375rem;"
+      );
+
+      project.appendChild(img);
+      project.appendChild(overlay);
+      overlay.classList.add("overlay");
+
+      data.techStack.forEach((tech, index) => {
+        let li = document.createElement("li");
+        li.innerHTML = index < data.techStack.length - 1 ? `${tech} | ` : tech;
+        li.style.display = "inline";
+        ul.appendChild(li);
+      });
+
+      //   listWrapper.appendChild(ul);
+
+      overlay.innerHTML = `  <h2 class="text-md md:text-lg py-2 data-title">${data.title}</h2>
+          <p class="text-sm"> ${data.description}</p>  
+          <br/>
+          <h3 class="text-sm">Tech Stack: </h3>    
+        `;
+      overlay.appendChild(ul);
+      //   project.innerHTML = `
+      //           <img
+      //                 src="${data.image}"
+      //                 alt=""
+      //                 class="rounded-md w-full h-full"
+      //                 id="project_image"
+      //           />
+      //               <div class="overlay">
+      //                   <h2 class="text-md md:text-lg py-2">${data.title}</h2>
+      //                   <p id="description_project">
+      //                       ${data.description}
+      //                   </p>
+      //                   <a
+      //                     href="project.html"
+      //                     target="_blank"
+      //                     class="mt-2 mb-1 block text-sm md:text-md see_project-btn"
+      //                   >
+      //                     See Project <i class="fa-solid fa-arrow-right ml-1"></i>
+      //                   </a>
+      //               </div>
+      //     `;
+
+      container.append(project);
     });
   })
   .catch((err) => {

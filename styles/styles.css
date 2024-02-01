@@ -356,7 +356,7 @@ section .title::before {
   height: auto;
   border-radius: 0.375rem;
   position: relative;
-  padding: 0.75rem;
+  padding: 0.6rem;
 }
 .project_img {
   border-radius: 0.375rem;

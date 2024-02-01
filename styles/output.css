@@ -873,6 +873,10 @@ video {
     display: block;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:h-36 {
     height: 9rem;
   }
