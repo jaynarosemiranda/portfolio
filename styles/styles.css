@@ -328,23 +328,16 @@ section .title::before {
   height: 0;
   transition: 0.8s ease;
   border-radius: 0.5rem;
-  /* padding: 10px; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
+  color: #fff;
   display: block;
   text-align: center;
-
-  /* border: 1px solid var(--accentColor); */
 }
+
 .overlay h2 {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 .project:hover .overlay {
   height: 100%;
-
-  /* transform: scale(1.1); */
 }
 
 .project:hover {
@@ -400,7 +393,7 @@ section .title::before {
     right: 0;
   }
   .hero_section .svg {
-    bottom: -18%;
+    bottom: -10%;
   }
   .skills-set_container img {
     width: 40px !important;
@@ -416,10 +409,6 @@ section .title::before {
     width: 30px;
     height: 30px;
   }
-  .hero_section .svg {
-    bottom: -15%;
-    /* top: 0; */
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -429,5 +418,8 @@ section .title::before {
     gap: 15px;
     display: grid;
     grid-template-columns: auto auto auto;
+  }
+  .hero_section .svg {
+    bottom: 10%;
   }
 }

@@ -32,7 +32,7 @@ fetch("./data/projects.json")
 
       //   listWrapper.appendChild(ul);
 
-      overlay.innerHTML = `  <h2 class="text-md md:text-lg py-2 data-title">${data.title}</h2>
+      overlay.innerHTML = `  <h2 class="text-md md:text-lg lg:text-2xl py-2 data-title">${data.title}</h2>
           <p class="text-sm"> ${data.description}</p>  
           <br/>
           <h3 class="text-sm">Tech Stack: </h3>    
@@ -69,7 +69,6 @@ fetch("./data/projects.json")
 
 let mybutton = document.getElementById("button");
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = () => {
   console.log("scrolling");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -79,12 +78,6 @@ window.onscroll = () => {
     mybutton.classList.remove("show");
   }
 };
-
-// When the user clicks on the button, scroll to the top of the document
-// function topFunction() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
 
 let section = document.querySelectorAll("section");
 let lists = document.querySelectorAll(".nav-links");
@@ -128,7 +121,6 @@ function toggleColor() {
   let nav = document.querySelector("nav");
   let socialLinks = document.querySelector(".hero_section .social-media-links");
   let details = document.querySelector(".hero-section_details");
-  let btn = document.querySelector(".btn-wrapper");
 
   if (localStorage.getItem("isDarkMode") == "false") {
     dark.style.display = "block";
@@ -137,10 +129,6 @@ function toggleColor() {
     menu.style.background = "#cdd5ef";
     nav.style.background = "#cdd5ef";
     socialLinks.style.color = "#fff";
-    details.style.color = "#101530";
-    // btn.style.color = "#fff";
-
-    // document.querySelector(".cv-btn").style.color = "#fff";
   } else {
     dark.style.display = "none";
     light.style.display = "block";
