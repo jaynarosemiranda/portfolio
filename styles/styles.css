@@ -49,6 +49,11 @@ nav {
   color: #6c767a;
   line-height: 1.9;
 }
+
+.border_accent {
+  border: 4px solid var(--accentColor);
+}
+
 @media (min-width: 500px) {
   .content {
     width: 43%;
@@ -408,7 +413,13 @@ section .title::before {
     height: 30px;
   }
 }
-
+.bg-photo {
+  /* background: var(--accentColor); */
+  border: 5px solid var(--accentColor);
+  -webkit-box-shadow: 0 0 20px var(--accentColor);
+  -moz-box-shadow: 0 0 20px var(--accentColor);
+  box-shadow: 0 0 20px var(--accentColor);
+}
 @media screen and (max-width: 1024px) {
   .skills-set_container {
     width: 100%;
@@ -416,8 +427,5 @@ section .title::before {
     gap: 15px;
     display: grid;
     grid-template-columns: auto auto auto;
-  }
-  .hero_section .svg {
-    /* bottom: 10%; */
   }
 }

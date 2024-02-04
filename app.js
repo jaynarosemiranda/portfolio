@@ -106,10 +106,10 @@ window.onscroll = () => {
 };
 
 function changeTheme() {
-  if (localStorage.getItem("isDarkMode") == "true") {
-    localStorage.setItem("isDarkMode", "false");
-  } else {
+  if (localStorage.getItem("isDarkMode") == "false") {
     localStorage.setItem("isDarkMode", "true");
+  } else {
+    localStorage.setItem("isDarkMode", "false");
   }
   toggleColor();
 }
@@ -121,6 +121,7 @@ function toggleColor() {
   let nav = document.querySelector("nav");
   let socialLinks = document.querySelector(".hero_section .social-media-links");
   let details = document.querySelector(".hero-section_details");
+  let bgPhoto = document.querySelector(".bg-photo");
 
   if (localStorage.getItem("isDarkMode") == "false") {
     dark.style.display = "block";
@@ -129,6 +130,8 @@ function toggleColor() {
     menu.style.background = "#cdd5ef";
     nav.style.background = "#cdd5ef";
     socialLinks.style.color = "#fff";
+    bgPhoto.style.border = "5px solid #519cd4";
+    details.style.color = "#fff";
   } else {
     dark.style.display = "none";
     light.style.display = "block";

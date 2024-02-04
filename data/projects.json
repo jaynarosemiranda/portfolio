@@ -7,22 +7,10 @@
       "image": "./assets/img/miracle.png"
     },
     {
-      "title": "Dummy Text Only!",
+      "title": "Dolphin",
       "description": "Casino and Slot Games to provide entertainment and excitement for the user",
       "techStack": ["Vue JS", " HTML", " CSS"],
-      "image": "./assets/img/dummy-image.webp"
-    },
-    {
-      "title": "Dummy Text Only!",
-      "description": "Casino and Slot Games to provide entertainment and excitement for the user",
-      "techStack": ["Vue JS", " HTML", " CSS"],
-      "image": "./assets/img/dummy-image.webp"
-    },
-    {
-      "title": "Dummy Text Only!",
-      "description": "Casino and Slot Games to provide entertainment and excitement for the user",
-      "techStack": ["Vue JS", " HTML", " CSS"],
-      "image": "./assets/img/dummy-image.webp"
+      "image": "./assets/img/dolphin.png"
     }
   ]
 }
