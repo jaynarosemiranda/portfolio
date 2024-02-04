@@ -106,11 +106,15 @@ window.onscroll = () => {
 };
 
 function changeTheme() {
-  if (localStorage.getItem("isDarkMode") == "false") {
-    localStorage.setItem("isDarkMode", "true");
-  } else {
-    localStorage.setItem("isDarkMode", "false");
-  }
+  localStorage.getItem("isDarkMode") == "false"
+    ? localStorage.setItem("isDarkMode", "true")
+    : localStorage.setItem("isDarkMode", "false");
+
+  // if (localStorage.getItem("isDarkMode") == "false") {
+  //   localStorage.setItem("isDarkMode", "true");
+  // } else {
+  //   localStorage.setItem("isDarkMode", "false");
+  // }
   toggleColor();
 }
 function toggleColor() {
@@ -149,14 +153,14 @@ function btnScroll() {
   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 }
 
-function scrollTopTop() {
+function scrollToTop() {
   if (window.pageYOffset > 100) {
     btnScrollToTop.classList.add("active");
   } else {
     btnScrollToTop.classList.remove("active");
   }
 }
-window.addEventListener("scroll", scrollTopTop);
+window.addEventListener("scroll", scrollToTop);
 
 // Form Submission Web 3
 
