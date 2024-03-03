@@ -3,64 +3,32 @@ fetch("./data/projects.json")
     return res.json();
   })
   .then((res) => {
-    res.data.forEach((data) => {
+    res.data.forEach((data, index) => {
       const container = document.querySelector(".project_wrapper");
       const project = document.createElement("div");
-      const overlay = document.createElement("div");
-      let ul = document.createElement("ul");
-      const listWrapper = document.createElement("div");
-      project.classList.add("project");
-      project.classList.add("glass_form");
-
-      const img = document.createElement("img");
-      img.src = data.image;
-      img.setAttribute(
+      project.setAttribute(
         "style",
-        "width:100%; height:100%; border-radius: 0.375rem;"
+        "width:100%; display:flex; justify-content:center;flex-wrap:wrap;align-items:center;"
       );
-
-      project.appendChild(img);
-      project.appendChild(overlay);
-      overlay.classList.add("overlay");
-
-      data.techStack.forEach((tech, index) => {
-        let li = document.createElement("li");
-        li.innerHTML = index < data.techStack.length - 1 ? `${tech} | ` : tech;
-        li.style.display = "inline";
-        ul.appendChild(li);
+      let htmlContent = "";
+      const className = index % 2 === 0 ? "order-2" : "order-1";
+      htmlContent += `
+        <div class="lg:w-1/2 w-full ${className}">
+            <img src="${data.image}"  alt="" />
+        </div>`;
+      htmlContent += `<div class="lg:w-1/2 w-full p-2 project-details">`;
+      htmlContent += `<h2 class="text-red-300 text-2xl pb-2">${data.title}</h2>`;
+      htmlContent += `<p class="">${data.description} </p>`;
+      htmlContent += "<ul class='flex mt-2'>";
+      data.techStack.forEach((tech) => {
+        htmlContent += `<li class="tech-stack"> ${tech} </li>`;
       });
+      htmlContent += "</ul>";
+      htmlContent += "</div>";
+      // Add class based on odd or even index
 
-      //   listWrapper.appendChild(ul);
-
-      overlay.innerHTML = `  <h2 class="text-md md:text-lg lg:text-2xl py-2 data-title">${data.title}</h2>
-          <p class="text-sm"> ${data.description}</p>  
-          <br/>
-          <h3 class="text-sm">Tech Stack: </h3>    
-        `;
-      overlay.appendChild(ul);
-      //   project.innerHTML = `
-      //           <img
-      //                 src="${data.image}"
-      //                 alt=""
-      //                 class="rounded-md w-full h-full"
-      //                 id="project_image"
-      //           />
-      //               <div class="overlay">
-      //                   <h2 class="text-md md:text-lg py-2">${data.title}</h2>
-      //                   <p id="description_project">
-      //                       ${data.description}
-      //                   </p>
-      //                   <a
-      //                     href="project.html"
-      //                     target="_blank"
-      //                     class="mt-2 mb-1 block text-sm md:text-md see_project-btn"
-      //                   >
-      //                     See Project <i class="fa-solid fa-arrow-right ml-1"></i>
-      //                   </a>
-      //               </div>
-      //     `;
-
-      container.append(project);
+      project.innerHTML = htmlContent;
+      container.appendChild(project);
     });
   })
   .catch((err) => {
@@ -124,25 +92,22 @@ function toggleColor() {
   let light = document.querySelector(".fa-sun");
   let nav = document.querySelector("nav");
   let socialLinks = document.querySelector(".hero_section .social-media-links");
-  let details = document.querySelector(".hero-section_details");
   let bgPhoto = document.querySelector(".bg-photo");
 
   if (localStorage.getItem("isDarkMode") == "false") {
     dark.style.display = "block";
     light.style.display = "none";
     body.classList.add("light-theme");
-    menu.style.background = "#cdd5ef";
-    nav.style.background = "#cdd5ef";
+    menu.style.background = "#fff";
+    nav.style.background = "#fff";
     socialLinks.style.color = "#fff";
     bgPhoto.style.border = "5px solid #519cd4";
-    details.style.color = "#fff";
   } else {
     dark.style.display = "none";
     light.style.display = "block";
     menu.style.background = "#101530";
     body.classList.remove("light-theme");
     nav.style.background = "#101530";
-    details.style.color = "#fff";
   }
 }
 toggleColor();

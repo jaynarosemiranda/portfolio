@@ -1,16 +1,22 @@
 {
   "data": [
     {
-      "title": "Miracle",
-      "description": "Casino and Slot Games to provide entertainment and excitement for the user",
-      "techStack": ["Vue JS", " HTML", " CSS"],
-      "image": "./assets/img/miracle.png"
+      "title": "Green Express",
+      "description": "Embark on an unforgettable journey to tourist destination of Philippines, a captivating paradise where adventure, culture, and natural beauty converge. As your trusted travel companion, Green Express invites you to explore the wonders of Philippines, an enchanting destination that promises to fulfill your wildest travel dreams.",
+      "techStack": ["Vue JS", " Tailwind", "Rest API"],
+      "image": "./assets/img/GreenExpress.png"
     },
     {
-      "title": "Dolphin",
-      "description": "Casino and Slot Games to provide entertainment and excitement for the user",
-      "techStack": ["Vue JS", " HTML", " CSS"],
-      "image": "./assets/img/dolphin.png"
+      "title": "Todo List",
+      "description": "'Simple To-Do List' is a straightforward and user friendly website designed to help you stay organized and on top of your tasks. With its minimalist interface and user-friendly features, managing your daily tasks has never been easier.",
+      "techStack": ["Vue JS", " Firebase", "Tailwind"],
+      "image": "./assets/img/Todo.png"
+    },
+    {
+      "title": "My Blogs!",
+      "description": "'Welcome to My Blogs your ultimate destination for insightful articles, captivating stories, and expert opinions on a wide range of topics. Whether you're a curious reader seeking inspiration, knowledge, or entertainment, our blog is here to enrich your online experience and spark your imagination.",
+      "techStack": ["Vue JS", " Contentful", "Tailwind"],
+      "image": "./assets/img/Blog.png"
     }
   ]
 }
