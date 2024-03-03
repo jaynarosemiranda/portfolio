@@ -334,10 +334,15 @@ footer .social-media-links a {
 .tech-stack:first-child {
   margin-left: 0;
 }
-
+.about-me-img {
+  width: 300px;
+}
 @media screen and (min-width: 1024px) {
   .order-2 {
     order: 1;
+  }
+  .about-me-img {
+    width: 400px;
   }
 }
 .project {
