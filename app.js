@@ -17,9 +17,9 @@ fetch("./data/projects.json")
             <img src="${data.image}"  alt="" />
         </div>`;
       htmlContent += `<div class="lg:w-1/2 w-full p-2 project-details">`;
-      htmlContent += `<h2 class="text-red-300 text-2xl pb-2">${data.title}</h2>`;
+      htmlContent += `<a href="${data.link}" target="_blank" class="project_title"> <h2 class="text-red-300 text-2xl pb-2">${data.title}</h2> </a>`;
       htmlContent += `<p class="">${data.description} </p>`;
-      htmlContent += "<ul class='flex mt-2'>";
+      htmlContent += "<ul class='flex mt-2 text-white'>";
       data.techStack.forEach((tech) => {
         htmlContent += `<li class="tech-stack"> ${tech} </li>`;
       });
@@ -40,7 +40,6 @@ let mybutton = document.getElementById("button");
 window.onscroll = () => {
   console.log("scrolling");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    console.log("fdhfhd");
     mybutton.classList.add("show");
   } else {
     mybutton.classList.remove("show");
@@ -78,11 +77,6 @@ function changeTheme() {
     ? localStorage.setItem("isDarkMode", "true")
     : localStorage.setItem("isDarkMode", "false");
 
-  // if (localStorage.getItem("isDarkMode") == "false") {
-  //   localStorage.setItem("isDarkMode", "true");
-  // } else {
-  //   localStorage.setItem("isDarkMode", "false");
-  // }
   toggleColor();
 }
 function toggleColor() {
@@ -91,7 +85,7 @@ function toggleColor() {
   let dark = document.querySelector(".fa-moon");
   let light = document.querySelector(".fa-sun");
   let nav = document.querySelector("nav");
-  let socialLinks = document.querySelector(".hero_section .social-media-links");
+  //   let socialLinks = document.querySelector(".hero_section .social-media-links");
   let bgPhoto = document.querySelector(".bg-photo");
 
   if (localStorage.getItem("isDarkMode") == "false") {
@@ -100,7 +94,7 @@ function toggleColor() {
     body.classList.add("light-theme");
     menu.style.background = "#fff";
     nav.style.background = "#fff";
-    socialLinks.style.color = "#fff";
+    // socialLinks.style.color = "#fff";
     bgPhoto.style.border = "5px solid #519cd4";
   } else {
     dark.style.display = "none";
@@ -167,4 +161,11 @@ form.addEventListener("submit", function (e) {
         result.style.display = "none";
       }, 3000);
     });
+});
+
+const typed = new Typed("#auto-typed", {
+  strings: ["Frontend Developer", "Aspiring Software QA Engineer"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  loop: true,
 });

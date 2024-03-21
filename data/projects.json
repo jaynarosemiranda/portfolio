@@ -10,7 +10,8 @@
       "title": "Todo List",
       "description": "'Simple To-Do List' is a straightforward and user friendly website designed to help you stay organized and on top of your tasks. With its minimalist interface and user-friendly features, managing your daily tasks has never been easier.",
       "techStack": ["Vue JS", " Firebase", "Tailwind"],
-      "image": "./assets/img/Todo.png"
+      "image": "./assets/img/Todo.png",
+      "link": "https://todo-12ca6.web.app"
     },
     {
       "title": "My Blogs!",

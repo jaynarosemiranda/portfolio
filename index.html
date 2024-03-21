@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Jayna | Portfolio</title>
     <link href="./styles/output.css?v=2" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/styles.css?v=3" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -13,6 +13,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
   <body>
     <header>
@@ -82,12 +83,12 @@
         id="home"
       >
         <div class="hero-section_details">
-          <img
+          <!-- <img
             src="./assets/img/section-8-img-2.svg"
             alt=""
             style="z-index: -1"
             class="absolute left-0 w-72 lg:w-96 svg"
-          />
+          /> -->
           <h3 class="text-2xl md:text-3xl tracking-wide">Hello There,</h3>
           <h2 class="text-3xl md:text-4xl pt-2 tracking-wide font-semibold">
             I am
@@ -102,11 +103,11 @@
               >Jayna Miranda</span
             >
           </h2>
+
           <h1
+            id="auto-typed"
             class="text-4xl md:text-5xl lg:text-6xl pt-2 tracking-widest font-bold glow"
-          >
-            Frontend Developer
-          </h1>
+          ></h1>
 
           <div class="mt-6 btn-wrapper">
             <a
@@ -126,26 +127,8 @@
               <i class="fa-solid fa-arrow-right ml-1"></i>
             </a>
           </div>
-          <img
-            src="./assets/img/section-3-img-2.svg"
-            alt=""
-            style="z-index: -1"
-            class="absolute right-0 top-20 lg:block hidden w-96"
-          />
-          <!-- <img
-            src="./assets/img/splat-img.svg"
-            class="absolute top-0 -z-10 right-0 lg:block hidden"
-            alt=""
-            style="transform: rotate(180deg)"
-          /> -->
-          <div class="social-media-links mt-8 flex">
-            <!-- <a
-              href="https://www.facebook.com/mirandajaynarose/"
-              target="_blank"
-            >
-              <i class="fa-brands fa-facebook"></i>
-            </a> -->
 
+          <div class="social-media-links mt-8 flex">
             <a
               href="https://www.linkedin.com/in/jayna-rose-miranda/"
               target="_blank"
@@ -170,9 +153,9 @@
         id="about"
         style="min-height: 80vh"
       >
-        <div class="p-4 md:px-24 lg:px-20 md:pt-20">
+        <div class="p-4 md:px-24 lg:px-20 md:pt-12">
           <h2
-            class="text-center text-3xl 2xl:text-4xl tracking-wider uppercase font-bold title"
+            class="text-3xl 2xl:text-4xl tracking-wider uppercase font-bold title"
           >
             About Me
           </h2>
@@ -200,10 +183,10 @@
                 <div id="yellow"></div>
                 <div id="green"></div>
               </div>
-              <div id="screen" class="glass_form">
-                <div class="icon arrow font">
-                  <span class="text-2xl">Where it all started</span>
-                </div>
+              <div id="screen" class="border">
+                <pre
+                  class="icon arrow font"
+                ><span class="tilde">~</span> Where it all started... </pre>
                 <pre
                   class="icon arrow font"
                 ><span class="tilde">~</span> Hello there! I am Jayna Miranda a passionate and creative Junior Frontend </pre>
@@ -218,8 +201,6 @@
                 <pre class="icon arrow font">
 <span class="tilde">~</span> It took a lot of time and effort before I landed my first freelance job,</pre>
                 <pre class="icon arrow font">
-<span class="tilde">~</span> from being an accounting staff into a front-end developer.</pre>
-                <pre class="icon arrow font">
 <span class="tilde">~</span> With my passion and dedication to my work, I am able to deliver my work </pre>
                 <pre class="icon arrow font">
 <span class="tilde">~</span> according to the client's needs.</pre>
@@ -229,6 +210,15 @@
 <span class="tilde">~</span> My passion and eagerness for continuous improvement drive me </pre>
                 <pre class="icon arrow font">
 <span class="tilde">~</span> to explore new skills. My tech stacks include <span style="color: orange;">HTML, </span><span style="color:#519cd4">CSS, </span>and <span style="color: yellow;">Javascript.</span></pre>
+                <pre
+                  class="icon arrow font"
+                ><span class="tilde">~</span> And as a passionate frontend developer with a keen eye for detail and a  </pre>
+                <pre
+                  class="icon arrow font"
+                ><span class="tilde">~</span> drive for excellence, I've recently embarked on an exciting  </pre>
+                <pre
+                  class="icon arrow font"
+                ><span class="tilde">~</span> transition into Software QA Engineer.</pre>
               </div>
             </div>
 
@@ -269,55 +259,78 @@
           alt=""
           class="absolute left-0 lg:top-0 bottom-0 lg:w-40 w-36 hidden lg:block -z-10"
         />
-        <div class="p-4 md:px-24 lg:px-20 md:pt-20">
+        <div class="p-4 md:px-24 lg:px-20 md:pt-12">
           <h2
-            class="text-center text-3xl 2xl:text-4xl tracking-wider uppercase font-bold title"
+            class="text-3xl 2xl:text-4xl tracking-wider uppercase font-bold title"
           >
             Skills
           </h2>
+          <h3 class="font-semibold text-lg text-center">
+            Tools and Technologies
+          </h3>
 
           <div class="py-6 md:py-12 skills-set_container">
             <div
               class="flex flex-col items-center h-18 md:h-42 justify-between m-2"
             >
               <img src="./assets/img/html-logo.png" alt="" />
-              <span class="text-xs md:text-md lg:text-xl">HTML5</span>
+              <span class="text-xs md:text-md lg:text-lg pt-2">HTML5</span>
             </div>
             <div
               class="flex flex-col items-center h-18 md:h-42 justify-between m-2"
             >
               <img src="./assets/img/css-logo.png" alt="" />
-              <span class="text-xs md:text-md lg:text-xl">CSS 3</span>
+              <span class="text-xs md:text-md lg:text-lg pt-2">CSS 3</span>
             </div>
             <div
               class="flex flex-col items-center h-18 md:h-42 justify-between m-2"
             >
               <img src="./assets/img/js-logo.png" alt="" />
-              <span class="text-xs md:text-md lg:text-xl">Javascript</span>
+              <span class="text-xs md:text-md lg:text-lg pt-2">Javascript</span>
             </div>
             <div
               class="flex flex-col items-center h-18 md:h-42 justify-between m-2"
             >
               <img src="./assets/img/vue-logo.png" alt="" />
-              <span class="text-xs md:text-md lg:text-xl">Vue JS</span>
+              <span class="text-xs md:text-md lg:text-lg pt-2">Vue JS</span>
             </div>
             <div
               class="flex flex-col items-center h-18 md:h-42 justify-between m-2"
             >
               <img src="./assets/img/tailwind-logo.png" alt="" />
-              <span class="text-xs md:text-md lg:text-xl">Tailwind</span>
+              <span class="text-xs md:text-md lg:text-lg pt-2">Tailwind</span>
             </div>
             <div
               class="flex flex-col items-center h-18 md:h-42 justify-between m-2"
             >
               <img src="./assets/img/bootstrap-logo.png" alt="" />
-              <span class="text-xs md:text-md lg:text-xl">Bootstrap</span>
+              <span class="text-xs md:text-md lg:text-lg pt-2">Bootstrap</span>
             </div>
             <div
               class="flex flex-col items-center h-18 md:h-42 justify-between m-2"
             >
               <img src="./assets/img/github-logo-copy.png" alt="" />
-              <span class="text-xs md:text-md lg:text-xl">Github</span>
+              <span class="text-xs md:text-md lg:text-lg pt-2">Github</span>
+            </div>
+            <div
+              class="flex flex-col items-center h-18 md:h-42 justify-between m-2"
+            >
+              <img src="./assets/img/photoshop.png" alt="" />
+              <span class="text-xs md:text-md lg:text-lg pt-2"
+                >Adobe Photoshop</span
+              >
+            </div>
+            <div
+              class="flex flex-col items-center h-18 md:h-42 justify-between m-2"
+            >
+              <img src="./assets/img/firebase.png" alt="" />
+              <span class="text-xs md:text-md lg:text-lg pt-2">Firebase</span>
+            </div>
+            <div
+              class="flex flex-col items-center h-18 md:h-42 justify-between m-2"
+            >
+              <img src="./assets/img/contentful.png" alt="" />
+              <span class="text-xs md:text-md lg:text-lg pt-2">Contentful</span>
             </div>
           </div>
         </div>
@@ -338,9 +351,9 @@
           alt=""
           class="absolute left-0 lg:top-0 bottom-0 lg:w-40 w-36"
         />
-        <div class="p-4 md:px-24 lg:px-20 md:pt-20">
+        <div class="p-4 md:px-24 lg:px-20 md:pt-12">
           <h2
-            class="text-center text-3xl 2xl:text-4xl tracking-wider uppercase font-bold title"
+            class="text-3xl 2xl:text-4xl tracking-wider uppercase font-bold title"
           >
             Project
           </h2>
@@ -406,9 +419,9 @@
       >
         <!-- <div class="inner clip-path_circle hidden md:block"></div> -->
 
-        <div class="p-4 md:px-24 lg:px-20 md:pt-20 pb-10">
+        <div class="p-4 md:px-24 lg:px-20 md:pt-12 pb-10">
           <h2
-            class="text-center text-3xl 2xl:text-4xl tracking-wider uppercase font-bold title"
+            class="text-3xl 2xl:text-4xl tracking-wider uppercase font-bold title"
           >
             Contact Me
           </h2>
