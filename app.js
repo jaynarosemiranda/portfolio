@@ -6,6 +6,7 @@ fetch("./data/projects.json")
     res.data.forEach((data, index) => {
       const container = document.querySelector(".project_wrapper");
       const project = document.createElement("div");
+
       project.setAttribute(
         "style",
         "width:100%; display:flex; justify-content:center;flex-wrap:wrap;align-items:center;"
