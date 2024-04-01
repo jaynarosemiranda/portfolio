@@ -164,9 +164,9 @@ form.addEventListener("submit", function (e) {
     });
 });
 
-const typed = new Typed("#auto-typed", {
-  strings: ["Frontend Developer", "Aspiring Software QA Engineer"],
-  typeSpeed: 100,
-  backSpeed: 100,
-  loop: true,
-});
+// const typed = new Typed("#auto-typed", {
+//   strings: ["Frontend Developer", "Aspiring Software QA Engineer"],
+//   typeSpeed: 100,
+//   backSpeed: 100,
+//   loop: true,
+// });
