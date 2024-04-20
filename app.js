@@ -39,7 +39,6 @@ fetch("./data/projects.json")
 let mybutton = document.getElementById("button");
 
 window.onscroll = () => {
-  console.log("scrolling");
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.classList.add("show");
   } else {
@@ -86,8 +85,8 @@ function toggleColor() {
   let dark = document.querySelector(".fa-moon");
   let light = document.querySelector(".fa-sun");
   let nav = document.querySelector("nav");
-  //   let socialLinks = document.querySelector(".hero_section .social-media-links");
-  let bgPhoto = document.querySelector(".bg-photo");
+
+  //   let bgPhoto = document.querySelector(".bg-photo");
 
   if (localStorage.getItem("isDarkMode") == "false") {
     dark.style.display = "block";
@@ -96,7 +95,7 @@ function toggleColor() {
     menu.style.background = "#fff";
     nav.style.background = "#fff";
     // socialLinks.style.color = "#fff";
-    bgPhoto.style.border = "5px solid #519cd4";
+    // bgPhoto.style.border = "5px solid #519cd4";
   } else {
     dark.style.display = "none";
     light.style.display = "block";

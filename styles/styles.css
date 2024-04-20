@@ -44,7 +44,9 @@ nav {
 }
 
 /* Styles for the content section */
-
+.tech-stack {
+  color: #fff !important;
+}
 .content {
   width: 77%;
   margin: 50px auto;
