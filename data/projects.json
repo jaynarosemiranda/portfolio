@@ -1,10 +1,11 @@
 {
   "data": [
     {
-      "title": "Green Express",
-      "description": "Embark on an unforgettable journey to tourist destination of Philippines, a captivating paradise where adventure, culture, and natural beauty converge. As your trusted travel companion, Green Express invites you to explore the wonders of Philippines, an enchanting destination that promises to fulfill your wildest travel dreams.",
-      "techStack": ["Vue JS", " Tailwind", "Rest API"],
-      "image": "./assets/img/GreenExpress.png"
+      "title": "My Blogs!",
+      "description": "'Welcome to My Blogs your ultimate destination for insightful articles, captivating stories, and expert opinions on a wide range of topics. Whether you're a curious reader seeking inspiration, knowledge, or entertainment, our blog is here to enrich your online experience and spark your imagination.",
+      "techStack": ["Vue JS", " Contentful", "Tailwind"],
+      "image": "./assets/img/Blog.png",
+      "link": "https://blog-6f6ee.web.app"
     },
     {
       "title": "Todo List",
@@ -14,11 +15,10 @@
       "link": "https://todo-12ca6.web.app"
     },
     {
-      "title": "My Blogs!",
-      "description": "'Welcome to My Blogs your ultimate destination for insightful articles, captivating stories, and expert opinions on a wide range of topics. Whether you're a curious reader seeking inspiration, knowledge, or entertainment, our blog is here to enrich your online experience and spark your imagination.",
-      "techStack": ["Vue JS", " Contentful", "Tailwind"],
-      "image": "./assets/img/Blog.png",
-      "link": "https://blog-6f6ee.web.app"
+      "title": "Green Express",
+      "description": "Embark on an unforgettable journey to tourist destination of Philippines, a captivating paradise where adventure, culture, and natural beauty converge. As your trusted travel companion, Green Express invites you to explore the wonders of Philippines, an enchanting destination that promises to fulfill your wildest travel dreams.",
+      "techStack": ["Vue JS", " Tailwind", "Rest API"],
+      "image": "./assets/img/GreenExpress.png"
     }
   ]
 }
