@@ -60,8 +60,8 @@ lists.forEach((item) =>
 
 window.onscroll = () => {
   section.forEach((sec) => {
-    let top = window.scrollY - 100;
-    let offset = sec.offsetTop - 200;
+    let top = window.scrollY - 300;
+    let offset = sec.offsetTop - 400;
     let height = sec.offsetHeight;
     let id = sec.getAttribute("id");
 
@@ -162,10 +162,3 @@ form.addEventListener("submit", function (e) {
       }, 3000);
     });
 });
-
-// const typed = new Typed("#auto-typed", {
-//   strings: ["Frontend Developer", "Aspiring Software QA Engineer"],
-//   typeSpeed: 100,
-//   backSpeed: 100,
-//   loop: true,
-// });
